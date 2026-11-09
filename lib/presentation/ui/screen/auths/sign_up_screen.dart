@@ -11,7 +11,11 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
+  final TextEditingController _firstNameController = TextEditingController();
+  final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _mobileController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -34,11 +38,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
 
                 CustomInputWidget(
-                  emailController: _emailController,
+                  emailController: _firstNameController,
                   hintText: 'First Name',
                 ),
                 CustomInputWidget(
-                  emailController: _emailController,
+                  emailController: _lastNameController,
                   hintText: 'Last Name',
                 ),
                 CustomInputWidget(
@@ -46,11 +50,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   hintText: 'Email',
                 ),
                 CustomInputWidget(
-                  emailController: _emailController,
+                  emailController: _mobileController,
                   hintText: 'Mobile',
                 ),
                 CustomInputWidget(
-                  emailController: _emailController,
+                  emailController: _passwordController,
                   hintText: 'Password',
                 ),
 
@@ -76,5 +80,3 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 }
-
-
