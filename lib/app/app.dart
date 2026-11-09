@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../presentation/ui/screen/auths/sign_in_screen.dart';
 import '../presentation/ui/screen/auths/sign_up_screen.dart';
+import '../presentation/ui/screen/auths/verify_email_screen.dart';
 import '../presentation/ui/screen/splash_screen.dart';
 
 class TaskManager extends StatelessWidget {
@@ -9,6 +10,6 @@ class TaskManager extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: SignInScreen());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: VerifyEmailScreen());
   }
 }
